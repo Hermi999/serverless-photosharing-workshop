@@ -56,7 +56,7 @@ public class ImageAnalysis implements BackgroundFunction<GCSEvent> {
             
             requests.add(request);
 
-            logger.info("Calling the Vision API...");
+            logger.info("Calling the Vision API....");
             BatchAnnotateImagesResponse result = vision.batchAnnotateImages(requests);
             List<AnnotateImageResponse> responses = result.getResponsesList();
 
